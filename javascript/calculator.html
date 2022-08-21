@@ -1,0 +1,101 @@
+<html>
+    <body>
+        <h1>덧셈기</h1>
+        <style>
+            input {
+                font-size:2rem;
+            }
+        </style>
+
+        <input type="button" value="+" onclick="
+            left = Number(prompt('left?'));
+            right = Number(prompt('right?'));
+            alert(left+right);">
+
+
+<br><br><br>
+<hr>
+<br><br><br>
+
+        <input id="l" type="text" placeholder="left"> 
+        +
+        <input id="r" type="text" placeholder="right">
+        <input type="button" value="=" onclick="
+            let lv = document.querySelector('#l').value;
+            let rv = document.querySelector('#r').value;
+            alert(Number(lv)+Number(rv));">
+
+
+<br><br><br>
+<hr>
+<br><br><br>
+
+        <input id="l2" type="text" placeholder="left" onchange="
+        l2 = document.querySelector('#l2').value;
+        r2 = document.querySelector('#r2').value;
+        결과 = Number(l2) + Number(r2);
+        document.querySelector('#result').value = 결과;
+        ">
+
+        +
+        <input id="r2" type="text" placeholder="right" onchange="
+        l2 = document.querySelector('#l2').value;
+        r2 = document.querySelector('#r2').value;
+        결과 = Number(l2) + Number(r2);
+        document.querySelector('#result').value = 결과;
+        ">
+
+        =
+        <input id="result" type="text">
+
+
+
+
+
+
+
+<br><br><br>
+<hr>
+<script>
+    function minus(){
+        debugger;
+        // l3 value
+        l3 = document.querySelector('#l3').value;
+
+        // r3 value
+        r3 = document.querySelector('#r3').value;
+        
+        // l3 + r3 = result의 value로 적용한다.
+        결과 = Number(l3) - Number(r3);
+        console.log(l3,r3,결과)
+        document.querySelector('#result2').value = 결과;
+    }
+     
+
+</script>
+        <input id="l3" type="text" placeholder="left" onchange="
+        minus();
+        ">
+
+        -
+        <input id="r3" type="text" placeholder="right" onchange="
+        minus();
+        ">
+
+        =
+        <input id="result2" type="text">
+
+
+
+<br><br><br>
+<hr>
+<br><br><br>
+
+
+        
+
+
+    </body>
+
+
+</html>
